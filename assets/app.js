@@ -24,17 +24,17 @@ function getDailyInput(){
     $('#txt10').text(input10);
     $('#txt11').text(input11);
     $('#txt12').text(input12);
-    $('#txt1').text(input1);
-    $('#txt2').text(input2);
-    $('#txt3').text(input3);
-    $('#txt4').text(input4);
-    $('#txt5').text(input5);
-    $('#txt6').text(input6);
-    $('#txt7').text(input7);
-    $('#txt8').text(input8);
-    $('#txt9pm').text(input9pm);
-    $('#txt10pm').text(input10pm);
-    $('#txt11pm').text(input11pm);
+    $('#txt13').text(input1);
+    $('#txt14').text(input2);
+    $('#txt15').text(input3);
+    $('#txt16').text(input4);
+    $('#txt17').text(input5);
+    $('#txt18').text(input6);
+    $('#txt19').text(input7);
+    $('#txt20').text(input8);
+    $('#txt21').text(input9pm);
+    $('#txt22').text(input10pm);
+    $('#txt23').text(input11pm);
 };
 getDailyInput();
 
@@ -50,87 +50,94 @@ $('.saveBtn').on('click', function(){
 var currentTime = moment().hour();
 $('.description').addClass('past')
 
-    if (currentTime === 9) {
-        $('#txt9').addClass('present');
-    } else if (currentTime < 9) {
-        $('#txt9').addClass('future');
-    }
+    // if (currentTime === 9) {
+    //     $('#txt9').addClass('present');
+    // } else if (currentTime < 9) {
+    //     $('#txt9').addClass('future');
+    // }
 
-    if (currentTime === 10){
-        $('#txt10').addClass('present');
-    } else if (currentTime < 10) {
-        $('#txt10').addClass('future');
-    }
+    // if (currentTime === 10){
+    //     $('#txt10').addClass('present');
+    // } else if (currentTime < 10) {
+    //     $('#txt10').addClass('future');
+    // }
 
-    if (currentTime === 12) {
-        $('#txt12').addClass('present');
-    } else if (currentTime < 12) {
-        $('#txt12').addClass('future');
-    }
+    // if (currentTime === 12) {
+    //     $('#txt12').addClass('present');
+    // } else if (currentTime < 12) {
+    //     $('#txt12').addClass('future');
+    // }
 
-    if (currentTime === 13){
-        $('#txt1').addClass('present');
-    } else if (currentTime < 13){
-        $('#txt8').addClass('future');
-    }
+    // if (currentTime === 13){
+    //     $('#txt1').addClass('present');
+    // } else if (currentTime < 13){
+    //     $('#txt8').addClass('future');
+    // }
 
-    if (currentTime === 14) {
-        $('#txt2').addClass('present');
-    } else if (currentTime < 14) {
-        $('#txt2').addClass('future');
-    }
+    // if (currentTime === 14) {
+    //     $('#txt2').addClass('present');
+    // } else if (currentTime < 14) {
+    //     $('#txt2').addClass('future');
+    // }
 
-    if (currentTime === 15){
-        $('#txt3').addClass('present');
-    } else if (currentTime < 15) {
-        $('#txt3').addClass('future');
-    }
+    // if (currentTime === 15){
+    //     $('#txt3').addClass('present');
+    // } else if (currentTime < 15) {
+    //     $('#txt3').addClass('future');
+    // }
 
-    if (currentTime === 16) {
-        $('#txt4').addClass('present');
-    } else if (currentTime < 16) {
-        $('#txt4').addClass('future');
-    }
+    // if (currentTime === 16) {
+    //     $('#txt4').addClass('present');
+    // } else if (currentTime < 16) {
+    //     $('#txt4').addClass('future');
+    // }
 
-    if (currentTime === 17) {
-        $('#txt5').addClass('present');
-    } else if (currentTime < 17) {
-        $('#txt5').addClass('future');
-    }
+    // if (currentTime === 17) {
+    //     $('#txt5').addClass('present');
+    // } else if (currentTime < 17) {
+    //     $('#txt5').addClass('future');
+    // }
 
-    if (currentTime === 18) {
-        $('#txt6').addClass('present');
-    } else if (currentTime < 18){
-        $('#txt6').addClass('future');
-    }
+    // if (currentTime === 18) {
+    //     $('#txt6').addClass('present');
+    // } else if (currentTime < 18){
+    //     $('#txt6').addClass('future');
+    // }
 
-    if (currentTime === 19) {
-        $('#txt7').addClass('present');
-    } else if (currentTime < 19) {
-        $('#txt7').addClass('future');
-    }
+    // if (currentTime === 19) {
+    //     $('#txt7').addClass('present');
+    // } else if (currentTime < 19) {
+    //     $('#txt7').addClass('future');
+    // }
 
-    if (currentTime === 20){
-        $('#txt8').addClass('present');
-    } else if (currentTime < 21){
-        $('#txt8').addClass('future');
-    }
+    // if (currentTime === 20){
+    //     $('#txt8').addClass('present');
+    // } else if (currentTime < 21){
+    //     $('#txt8').addClass('future');
+    // }
 
-    if (currentTime === 21){
-        $('#txt9pm').addClass('present');
-    } else if (currentTime < 21){
-        $('#txt9pm').addClass('future');
-    }
+    // if (currentTime === 21){
+    //     $('#txt9pm').addClass('present');
+    // } else if (currentTime < 21){
+    //     $('#txt9pm').addClass('future');
+    // }
 
-    if (currentTime === 22){
-        $('#txt10pm').addClass('present');
-    } else if (currentTime < 22){
-        $('#txt10pm').addClass('future');
-    }
+    // if (currentTime === 22){
+    //     $('#txt10pm').addClass('present');
+    // } else if (currentTime < 22){
+    //     $('#txt10pm').addClass('future');
+    // }
 
-    if (currentTime === 23) {
-        $('#txt11pm').addClass('present');
-    } else if (currentTime < 23) {
-        $('#txt11pm').addClass('future');
-    }
+    // if (currentTime === 23) {
+    //     $('#txt11pm').addClass('present');
+    // } else if (currentTime < 23) {
+    //     $('#txt11pm').addClass('future');
+    // }
 
+    for (var i = 9; i < 24; i++) {
+        if (currentTime === i) {
+            $('#txt' + i).addClass('present');
+        } else if (currentTime < i) {
+            $('#txt' + i).addClass('future');
+        }
+    }
