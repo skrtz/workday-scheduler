@@ -32,7 +32,7 @@ function getDailyInput(){
     $('#txt6').text(input6);
     $('#txt7').text(input7);
     $('#txt8').text(input8);
-    $('#txt9').text(input9pm);
+    $('#txt9pm').text(input9pm);
     $('#txt10pm').text(input10pm);
     $('#txt11pm').text(input11pm);
 };
