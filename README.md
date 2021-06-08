@@ -7,7 +7,7 @@ This application is a daily personal scheduling interface. The user can log and 
 ## Tech Used
 - HTML  
 - CSS  
-- JAVASCRIPT  
+- JAVASCRIPT & JQUERY
 - MOMENT  
 
 ## Screenshot
