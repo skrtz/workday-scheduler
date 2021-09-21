@@ -70,3 +70,9 @@ body {
     transition: all .05s ease-in-out;
   }
   
+  /* @media screen and (max-width: 600px) {
+    .row{
+      display: flex;
+      flex-shrink: 3;
+    }
+  } */
