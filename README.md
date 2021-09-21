@@ -11,4 +11,4 @@ This application is a daily personal scheduling interface. The user can log and 
 - MOMENT  
 
 ## Screenshot
-[scheduler app](./assets/workday-scheduler.gif)
+![scheduler app](./assets/workday-scheduler.gif)
