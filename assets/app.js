@@ -23,9 +23,9 @@ $('.saveBtn').on('click', function(){
 // timeblock color code
 $('.description').addClass('past')
     for (var i = 9; i <= 24; i++) {
-        if (currentTime - 10 === i - 10) {
-            $('#'+ [i - 10]).addClass('present');
+        if (currentTime - 9 === i - 9) {
+            $('#'+ [i - 9]).addClass('present');
         } else if (currentTime < i) {
-            $('#'+ [i - 10]).addClass('future');
+            $('#'+ [i - 9]).addClass('future');
         }
     }
